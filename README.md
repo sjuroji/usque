@@ -49,15 +49,14 @@ Usque is an open-source reimplementation of the Cloudflare WARP client's MASQUE 
   - [Disclaimer](#disclaimer)
 
 > **Personal fork note:** I'm using this primarily for learning about MASQUE/QUIC tunneling. Tested on Linux `amd64` only. Upstream repo: [Diniboy1123/usque](https://github.com/Diniboy1123/usque).
+>
+> **My notes:**
+> - SOCKS5 mode works well for routing browser traffic through the tunnel without needing root.
+> - For quick testing I usually run: `usque socks5 --listen 127.0.0.1:1080`
+> - Native tunnel mode requires `CAP_NET_ADMIN`; don't forget `sudo` or to set the capability on the binary.
 
 ## Installation
 
 You can download the latest release from the [releases page](https://github.com/Diniboy1123/usque/releases). For now, Android (`arm64`), Linux (`armv5`, `armv6`, `armv7`, `arm64`, `amd64`), Windows (`arm64`, `amd64`) and Darwin (`arm64`, `amd64`) binaries are provided. **However only the Linux `amd64` binary was tested.** If you have a different platform, you can build from source.
 
-Extract the archive and you will find a binary named `usque` in the root directory. You can move this binary to a directory in your `PATH` to make it accessible from anywhere.
-
-## Building from source
-
-Since the tool is written in Go, it should be rather trivial.
-
-1
+Extract the archive and you will find a binary named `usque` in the r
