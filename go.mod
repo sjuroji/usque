@@ -1,34 +1,36 @@
-module github.com/Diniboy1123/usque
+module github.com/your-org/usque
 
-go 1.25.5
+go 1.21
 
 require (
-	github.com/Diniboy1123/connect-ip-go v0.0.0-20260409225322-8d7bb0a858a2
-	github.com/quic-go/quic-go v0.59.0
-	github.com/songgao/water v0.0.0-20200317203138-2b4b6d7c09d8
-	github.com/spf13/cobra v1.10.2
-	github.com/txthinking/runnergroup v0.0.0-20210608031112-152c7c4432bf
-	github.com/txthinking/socks5 v0.0.0-20251011041537-5c31f201a10e
-	github.com/vishvananda/netlink v1.3.1
-	github.com/yosida95/uritemplate/v3 v3.0.2
-	golang.org/x/net v0.52.0
-	golang.zx2c4.com/wireguard v0.0.0-20250521234502-f333402bd9cb
-	gvisor.dev/gvisor v0.0.0-20260408064518-65a410b0d584
+	github.com/cloudflare/circl v1.3.7
+	github.com/spf13/cobra v1.8.0
+	github.com/spf13/viper v1.18.2
+	golang.org/x/crypto v0.21.0
+	golang.org/x/net v0.22.0
+	golang.zx2c4.com/wireguard v0.0.0-20231211153847-12269c276173
+	golang.zx2c4.com/wireguard/wgctrl v0.0.0-20230429144221-925a1e7659e6
 )
 
 require (
-	github.com/dunglas/httpsfv v1.1.0 // indirect
-	github.com/google/btree v1.1.3 // indirect
+	github.com/fsnotify/fsnotify v1.7.0 // indirect
+	github.com/google/btree v1.1.2 // indirect
+	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
-	github.com/patrickmn/go-cache v2.1.0+incompatible // indirect
-	github.com/quic-go/qpack v0.6.0 // indirect
-	github.com/spf13/pflag v1.0.10 // indirect
-	github.com/vishvananda/netns v0.0.5 // indirect
-	go.uber.org/mock v0.6.0 // indirect
-	golang.org/x/crypto v0.49.0 // indirect
-	golang.org/x/exp v0.0.0-20260312153236-7ab1446f8b90 // indirect
-	golang.org/x/sys v0.42.0 // indirect
-	golang.org/x/text v0.35.0 // indirect
-	golang.org/x/time v0.15.0 // indirect
+	github.com/magiconair/properties v1.8.7 // indirect
+	github.com/mitchellh/mapstructure v1.5.0 // indirect
+	github.com/pelletier/go-toml/v2 v2.1.1 // indirect
+	github.com/sagikazarmark/locafero v0.4.0 // indirect
+	github.com/sagikazarmark/slog-shim v0.1.0 // indirect
+	github.com/sourcegraph/conc v0.3.0 // indirect
+	github.com/spf13/afero v1.11.0 // indirect
+	github.com/spf13/cast v1.6.0 // indirect
+	github.com/spf13/pflag v1.0.5 // indirect
+	github.com/subosito/gotenv v1.6.0 // indirect
+	golang.org/x/exp v0.0.0-20240222234643-814bf88cf225 // indirect
+	golang.org/x/sys v0.18.0 // indirect
+	golang.org/x/text v0.14.0 // indirect
 	golang.zx2c4.com/wintun v0.0.0-20230126152724-0fa3db229ce2 // indirect
+	gopkg.in/ini.v1 v1.67.0 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
