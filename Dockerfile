@@ -24,4 +24,8 @@ COPY --from=builder /app/usque /bin/usque
 # Add tzdata so the container can handle timezone-aware logging if needed
 RUN apk --no-cache add tzdata
 
+# Run as non-root user for better security
+RUN adduser -D -u 1000 appuser
+USER appuser
+
 ENTRYPOINT ["/bin/usque"]
