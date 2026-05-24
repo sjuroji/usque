@@ -21,4 +21,7 @@ WORKDIR /app
 
 COPY --from=builder /app/usque /bin/usque
 
+# Add tzdata so the container can handle timezone-aware logging if needed
+RUN apk --no-cache add tzdata
+
 ENTRYPOINT ["/bin/usque"]
